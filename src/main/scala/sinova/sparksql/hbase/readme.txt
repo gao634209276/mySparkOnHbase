@@ -1,0 +1,1 @@
+https://github.com/OopsOutOfMemory/spark-sql-hbase

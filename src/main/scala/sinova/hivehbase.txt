@@ -1,0 +1,6 @@
+关于hivehbase表:
+如果hbase的表已经存在,创建hive的映射这时候应该创建external表,如果是内部表报错
+如果是hbase表不存在,这时候应当创建hive的内部表,然后会在hbase中创建同名表,如果创建外部表则报错
+不能向该hivehbase表中load数据,应到使用insert into as select的方式load数据
+而且创建后的hivehbase表的hive表也不能转化为hive外部表
+alter table xx set tblproperties ('external'='true');
